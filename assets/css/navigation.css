@@ -1,0 +1,181 @@
+@import url('https://fonts.cdnfonts.com/css/butler');
+
+
+
+
+/* Style for dropdown menu */
+.navbar {
+    font-family: "Butler", serif;
+    /* Apply Butler font to the navbar */
+    background-color: transparent;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.menu-container {
+    float: right;
+    padding-right: 100px;
+}
+
+.dropbtn {
+    font-family: "Butler", serif;
+    /* Apply Butler font to the menu button */
+    background-color: transparent;
+    color: #2a1d16;
+    padding: 14px 30px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    float: left;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+
+/* Responsive menu styles */
+/* Show the menu for larger screens */
+@media screen and (min-width: 768px) {
+    .menu {
+        display: flex !important;
+    }
+
+    .menu-toggle {
+        display: none !important;
+    }
+}
+
+/* Hide the menu and show the hamburger button for smaller screens */
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        padding: 5px;
+    }
+
+    .menu-toggle span {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 4px auto;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.active .dropdown {
+        display: block;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+}
+
+/* Add styles for the overlay menu */
+.overlay-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    /* Adjust other styles as needed */
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    /* Adjust other styles as needed */
+}
+
+.overlay-menu-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* Adjust other styles as needed */
+}
+
+.overlay-menu-content a {
+    display: block;
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+    /* Adjust other styles as needed */
+}
+
+.submenu {
+    display: none;
+    /* Add other styles as needed */
+}
+
+.submenu.active {
+    display: block;
+    /* Add other styles as needed */
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/css/navigation.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+  <div class="name">Li Zeng</div>
+
+  <!-- Add this section for the dropdown menus -->
+  <!-- Add this section for the dropdown menus -->
+  <div class="navbar">
+    <div class="menu-container">
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- Add this section for the overlay menu -->
+      <div id="overlay-menu" class="overlay-menu">
+        <button id="close-menu" class="close-menu">&#10005;</button>
+        <div class="overlay-menu-content">
+          <a href="#" data-toggle-submenu="#selected_work_submenu">Selected Works</a>
+          <ul class="submenu" id="selected_work_submenu">
+            <li><a href="#baltic-sea">Baltic Sea</a></li>
+            <li><a href="#auf-die-elbe">Auf der Elbe</a></li>
+            <li><a href="#morocoo">Morocco</a></li>
+          </ul>
+          <a href="#" data-toggle-submenu="#candid_street_submenu">Candid Street</a>
+          <ul class="submenu" id="candid_street_submenu">
+            <li><a href="#europe2020">Europe Early 2020s</a></li>
+          </ul>
+          <!-- Add more menu items here -->
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="dropdown">
+          <button class="dropbtn">Selected Works</button>
+          <div class="dropdown-content">
+            <a id="baltic-sea2" href="#baltic-sea">Baltic Sea</a>
+            <a href="#auf-die-elbe">Auf die Elbe</a>
+            <a href="#morocoo">Morocoo</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Candid Street</button>
+          <div class="dropdown-content">
+            <!--a href="#europe2010">Europe Late 2010s</a-->
+            <a href="#europe2020">Europe Early 2020s</a>
+          </div>
+        </div>
+        <!-- Add more dropdowns here -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Vertical spacer -->
+  <!-- Content specific to the selected section will be loaded here -->
+  <div class="white-frame">
+    <button id="left-arrow" class="arrow left-arrow">&#8249;</button>
+    <div id="gallery" class="gallery">
+      <!-- Add more images here -->
+    </div>
+    <button id="right-arrow" class="arrow right-arrow">&#8250;</button>
+  </div>
+
+  <div id="status-gallery" class="status-gallery">
+    <!-- Add more status images here -->
+  </div>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/overlay.js"></script>
+
+</body>
+
+</html>

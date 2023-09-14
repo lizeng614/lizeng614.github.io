@@ -1,0 +1,88 @@
+/* Apply the Butler font to specific elements */
+body {
+    font-family: "Butler", serif;
+    font-weight: 300;
+    /* Normal text */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(76, 93, 80);
+    /*(76,93,80)*/
+    /*#2a1d16*/
+    color: #efebe6;
+    /* (239,237,230) */
+}
+
+.name {
+    font-family: "Butler", serif;
+    font-weight: 240;
+    font-size: 60px;
+    /* Adjust the font size as needed */
+    position: absolute;
+    top: 40px;
+    /* Adjust the top position to control vertical placement */
+    left: 60px;
+    /* Adjust the left position to control horizontal placement */
+    z-index: 2;
+    /* Place the name above other content */
+}
+
+.dropbtn {
+    font-family: "Butler", serif;
+    font-weight: 240;
+    /* Apply Butler font to the menu button */
+    background-color: transparent;
+    color: #efebe6 !important;
+}
+
+
+/* ... existing code ... */
+.home {
+    margin-top: 50px !important;
+    background-color: transparent;
+    /* Making it transparent */
+    padding: 0;
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.slideshow-container {
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 1440px;
+    max-height: 720px;
+    width: 80%;
+    /* Add this line to make the gallery container responsive */
+    font-size: 0;
+    /* Removes the white-space */
+}
+
+.mySlides.fade {
+    display: inline-block;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    max-width: 100%;
+    /* Set a maximum width for the container */
+    max-height: 720px;
+    /* Set a maximum height for the container */
+    width: 100%;
+    /* Allow the width to adjust according to the aspect ratio */
+    height: auto;
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+img {
+    margin: auto;
+    max-width: 100%;
+    /* Set a maximum width for the container */
+    max-height: 720px;
+    /* Set a maximum height for the container */
+    width: auto;
+    /* Allow the width to adjust according to the aspect ratio */
+    height: auto;
+}
